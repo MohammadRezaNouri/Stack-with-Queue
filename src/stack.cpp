@@ -5,9 +5,7 @@
 bool stack::isEmpty()
 {
     if (q1.empty())
-    {
         return true;
-    }
     return false;
 }
 
@@ -19,9 +17,7 @@ void stack::push(int d)
 int stack::pop()
 {
     if (q1.empty())
-    {
         throw std::invalid_argument("Stack is empty!");
-    }
     int temp = q1.back();
     if (q1.size() == 1)
     {
@@ -40,4 +36,11 @@ int stack::pop()
         q2.pop();
     }
     return temp;
+}
+
+int stack::peek()
+{
+    if (q1.empty())
+        throw std::invalid_argument("Stack is empty!");
+    return q1.back();
 }
