@@ -95,5 +95,13 @@ void dr()
 
 int main()
 {
+    printf("\n");
+    my();
+    printf("\n");
+    you();
+    printf("\n");
+    dr();
+    printf("Press enter to exit...");
+    getchar();
     return 0;
 }
